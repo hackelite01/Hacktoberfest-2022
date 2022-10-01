@@ -1,5 +1,5 @@
 # Hacktoberfest 2022 `OPEN FIRST` Pull Request - `FREE T-SHIRT`🎉
-![Hacktoberfest 2021](static/logo.png)
+![Hacktoberfest 2022](logo.png)
 
 
 ## Contributors of `Hacktoberfest 2022`
@@ -96,6 +96,6 @@ To get approval of the pull request much quicker (`Follow Me`)🚀
 '''
 ```
 
-<tr><td align="center"><a href="https://github.com/hackelite01"><kbd><img src="https://avatars3.githubusercontent.com/hackelite01?size=100" width="100px;" alt=""/></kbd><br /><sub><b>Ossama Mehmood</b></sub></a><br /></td>
+<tr><td align="center"><a href="https://github.com/hackelite01"><kbd><img src="https://avatars3.githubusercontent.com/hackelite01?size=100" width="100px;" alt=""/></kbd><br /><sub><b>Mayank Rajput (hackelite01)</b></sub></a><br /></td>
 
 </tr>
