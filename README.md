@@ -90,7 +90,7 @@ keep in mind that repo has hacktoberfest topic..
 
 ## + Follow Me : } Quick Approval of Pull Request
 
-```py
+```python
 '''
 To get approval of the pull request much quicker (`Follow Me`)🚀
 '''
