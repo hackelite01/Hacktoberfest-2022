@@ -1,1 +1,5 @@
-- [Patrick Lee](https://github.com/panda0nion)
+---
+name: Patrick Lee
+institution/company: nenoacho.net
+github:panda0nion
+---
