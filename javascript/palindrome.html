@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome Identifier</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container text-center d-flex flex-column align-items-center justify-content-center" style="height:100vh">
+        <h1 class="display-1">Palindrome Identifier</h1>
+        <div class="row my-3 border rounded py-3 g-3 align-items-center">
+            <div class="col-auto">
+              <label for="inputExpression" class="col-form-label">Expression: </label>
+            </div>
+            <div class="col-9">
+              <input type="text" id="inputExpression" class="form-control" aria-describedby="passwordHelpInline">
+            </div>
+            <div class="col-auto offset-3">
+              <span id="passwordHelpInline" class="form-text">
+                Expression will be turned into alphanumeric String.
+              </span>
+            </div>
+            <div class="col-12">
+                <button onclick="checkPalindrome()" class="btn btn-primary">Check</button>
+            </div>
+            <div id="resultDiv" class="col-6 offset-3 rounded my-3 bg-gradient">
+                <h5 class="py-3 text-center text-light" id="result" ></h5>
+            </div>
+          </div>
+    </div>
+
+    <script>
+        // check character
+        function isCharacterALetter(char) {
+            return char.toLowerCase() != char.toUpperCase()
+        }
+
+        // check alphabet palindrome function
+        function palindrome(str) {
+        const word = str.split('');
+        let pal = [];
+
+        for (let index = 0; index < word.length; index++) {
+            // console.log(word[index]);
+            if (isCharacterALetter(word[index])) {
+                pal.push(word[index].toLowerCase());
+            }
+        }
+
+        const string1 = pal.join('');
+
+        console.log(string1);
+
+        // reverse an array
+        const array2 = pal.reverse();
+
+        // convert both arrays to strings
+        var string2 = array2.join('');
+        console.log(string2);
+
+        if(string1 === string2)
+        {
+            return true;
+        }
+        else {
+            return false;
+        }
+
+        
+        }
+
+        // check alphanumeric palindrome function
+        function alphanumericPalindrome(str) {
+            const word = str.replace(/[^a-z0-9]/gi,'').toLowerCase();
+            const reverseString = word.split('').reverse().join('').toLowerCase();
+
+            
+
+            if(word === reverseString) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+
+        console.log(palindrome("0_0 (: /-\ :) 0-0"));
+
+        console.log(alphanumericPalindrome("0_0 (: /-\ :) 0-0"));
+
+        function checkPalindrome()
+        {
+            const string = document.getElementById('inputExpression');
+
+            if(alphanumericPalindrome(string.value) === true)
+            {
+                document.getElementById('resultDiv').classList.remove("bg-danger");
+                document.getElementById('result').innerHTML = "It is a Palindrome";
+                document.getElementById('resultDiv').classList.add("bg-success");
+            }
+            else {
+                document.getElementById('resultDiv').classList.remove("bg-success");
+                document.getElementById('result').innerHTML = "It is not a Palindrome";
+                document.getElementById('resultDiv').classList.add("bg-danger");
+            }
+        }
+        
+    </script>
+</body>
+</html>
