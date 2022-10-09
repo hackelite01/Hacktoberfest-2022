@@ -1,0 +1,23 @@
+01. Write a program to reverse the Linked List. (both iterative and revcursive)
+02. Reverse a Linked List in group of Given Size. [Very Imp]
+03. Detect loop in a linked list. 
+04. Delete loop in a linked list. 
+05. Find the starting point of the loop.
+06. Remove Duplicates from sorted linked list.
+07. Remove Duplicates from unsorted linked list. 
+08. Move last element to the first of the linked list.
+09. Add 1 to number represented by Linked list.
+10. Add two numbers represented by Linked list.
+11. Intersection of two sorted linked lists.
+12. Merge Sort for Linked List.
+13. Quick Sort for Linked List.
+14. Find the middle element of the linked list.
+15. Check if a linked list is a circular linked list.
+16. Split a circular linked list into halves.
+17. Check if SLL is palindrome or not.
+18. Delete from a circular linked list. 
+19. Reverse a doubly linked list.
+20. Find pairs with a given sum in DLL.
+21. Find triplets in a sorted DLL whose sum is equal to the given value "X";
+22. Rotate doubly linked list by N nodes. 
+23. Reverse the doubly linked list in groups of given size.
